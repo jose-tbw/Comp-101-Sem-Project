@@ -46,17 +46,6 @@ void keyReleased(){
   }
   }
 /*
-fixed both check floor int array names
-fixed right movement conditons to the correct keys
-fixed movement
-added getIndex func
-added keyPressed func
-added keyReleased func
-added left movement coditions and applying delta to icon
-added conditional to make startJump() work
-added platformCollisionDetection
-added clearer floor and roof colors (temp)
-redesigned movement input
 
 todo:
 - Implement proper collision detection with buttons/enemies
