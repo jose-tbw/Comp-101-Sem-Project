@@ -46,19 +46,21 @@ public class Stage{
   }
   
   public void drawPlatforms(){
-    
     for(int i = 0; i < platformsX.length; i++){
       //int delay = (int) (Math.random() * 50);
       fill(i*75);
+      rectMode(CENTER);
       rect(platformsX[i], platformsY[i], platformLength, rowHeight/2);
+      rectMode(CORNER);
     }
   }
   
-  public int[] returnArray(int string){
-    if(string.equals("y")){
-      return platformsY;
-    } else {
-     return platformsX;
+  public int[] returnArray( String k){
+    if(k.equals("y")){
+        return platformsY;
+    } 
+    else {
+        return platformsX;
     }
   }
 }
